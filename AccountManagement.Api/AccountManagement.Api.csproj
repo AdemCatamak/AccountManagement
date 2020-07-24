@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <LangVersion>latest</LangVersion>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <ProjectReference Include="..\AccountManagement.Business\AccountManagement.Business.csproj" />
+      <ProjectReference Include="..\AccountManagement.Exceptions\AccountManagement.Exceptions.csproj" />
+    </ItemGroup>
+</Project>

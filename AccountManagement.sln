@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountManagement", "AccountManagement\AccountManagement.csproj", "{316EA9A7-BE81-474F-BD54-ABF088A8F122}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountManagement.Api", "AccountManagement.Api\AccountManagement.Api.csproj", "{63C93973-548F-436A-91AD-A713C9F1C6CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountManagement.Data", "AccountManagement.Data\AccountManagement.Data.csproj", "{E2A190DD-0D80-4C5C-8F8C-A0A5258353A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountManagement.Business", "AccountManagement.Business\AccountManagement.Business.csproj", "{9929F8A2-D401-4735-A023-173792904A28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountManagement.Exceptions", "AccountManagement.Exceptions\AccountManagement.Exceptions.csproj", "{130A8FC6-6193-438A-BBCC-16F8599AC417}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountManagement.Utility", "AccountManagement.Utility\AccountManagement.Utility.csproj", "{71F29BF7-94E8-4844-80FC-5A6657E86CBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountManagement.Consumers", "AccountManagement.Consumers\AccountManagement.Consumers.csproj", "{63486F28-4EEF-4484-A324-B8F25B77FB45}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildFiles", "BuildFiles", "{74F93C18-9361-447D-A4AA-620076183679}"
+ProjectSection(SolutionItems) = preProject
+	account-management-rabbit-mq.Dockerfile = account-management-rabbit-mq.Dockerfile
+	account-management.Dockerfile = account-management.Dockerfile
+	docker-compose.yml = docker-compose.yml
+EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{316EA9A7-BE81-474F-BD54-ABF088A8F122}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{316EA9A7-BE81-474F-BD54-ABF088A8F122}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{316EA9A7-BE81-474F-BD54-ABF088A8F122}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{316EA9A7-BE81-474F-BD54-ABF088A8F122}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63C93973-548F-436A-91AD-A713C9F1C6CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63C93973-548F-436A-91AD-A713C9F1C6CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63C93973-548F-436A-91AD-A713C9F1C6CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63C93973-548F-436A-91AD-A713C9F1C6CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2A190DD-0D80-4C5C-8F8C-A0A5258353A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2A190DD-0D80-4C5C-8F8C-A0A5258353A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2A190DD-0D80-4C5C-8F8C-A0A5258353A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2A190DD-0D80-4C5C-8F8C-A0A5258353A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9929F8A2-D401-4735-A023-173792904A28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9929F8A2-D401-4735-A023-173792904A28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9929F8A2-D401-4735-A023-173792904A28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9929F8A2-D401-4735-A023-173792904A28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{130A8FC6-6193-438A-BBCC-16F8599AC417}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{130A8FC6-6193-438A-BBCC-16F8599AC417}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{130A8FC6-6193-438A-BBCC-16F8599AC417}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{130A8FC6-6193-438A-BBCC-16F8599AC417}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71F29BF7-94E8-4844-80FC-5A6657E86CBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71F29BF7-94E8-4844-80FC-5A6657E86CBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71F29BF7-94E8-4844-80FC-5A6657E86CBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71F29BF7-94E8-4844-80FC-5A6657E86CBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63486F28-4EEF-4484-A324-B8F25B77FB45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63486F28-4EEF-4484-A324-B8F25B77FB45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63486F28-4EEF-4484-A324-B8F25B77FB45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63486F28-4EEF-4484-A324-B8F25B77FB45}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

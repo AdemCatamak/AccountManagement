@@ -1,0 +1,37 @@
+version: "3.4"
+
+services:
+
+  account-management-app:
+    image: account-management:latest
+    build:
+      context: ./
+      dockerfile: account-management.Dockerfile
+    ports:
+      - 10000:80
+    depends_on:
+      - account-management-sql-server
+      - account-management-rabbit-mq
+    links:
+      - account-management-sql-server
+      - account-management-rabbit-mq
+
+  account-management-sql-server:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "Passw0rd"
+    expose:
+      - 1433
+    ports:
+      - 10001:1433
+
+  account-management-rabbit-mq:
+    build:
+      context: ./
+      dockerfile: account-management-rabbit-mq.Dockerfile
+    expose:
+      - 15672
+      - 5672
+    ports:
+      - 10002:15672
